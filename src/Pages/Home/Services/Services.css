@@ -1,0 +1,22 @@
+.services-container {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 20px;
+}
+
+@media only screen and (max-width: 688px)  {
+    .services-container {
+        grid-template-columns : repeat(1,1fr)
+    } 
+}
+@media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) {
+    /* For landscape layouts only */
+    .services-container {
+        grid-template-columns: repeat(2,1fr);
+    }
+  }
+
+@media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:portrait) {
+    /* For portrait layouts only */
+    
+  }
